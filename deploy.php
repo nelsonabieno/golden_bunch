@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/laravel.php';
 
 // Project name
-set('application', 'my_project');
+set('application', 'golden_bunch');
 
 // Project repository
 set('repository', 'https://github.com/nelsonabieno/golden_bunch');
@@ -22,8 +22,8 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');    
+host('https://goldenbunchschools.org')
+    ->set('deploy_path', '../public_html');
     
 // Tasks
 
